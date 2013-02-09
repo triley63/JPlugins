@@ -1,0 +1,2 @@
+INSERT INTO `#__TrainingStyle` (`name`, `description`) VALUES ('Exam', 'This will watch the training first with the exam at the end');
+INSERT INTO `#__TrainingStyle` (`name`, `description`) VALUES ('Side By Side', 'The training and exam will be completed at the same time');)

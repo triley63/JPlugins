@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="component"
+              label="COM_POLICY_COMPONENT_FIELDSET_LABEL"
+              description="COM_POLICY_COMPONENT_FIELDSET_DESC">
+        <field
+            name="facility_name"
+            type="text"
+            label="COM_POLICY_COMPONENT_NAME_FIELD_LABEL"
+            description="COM_POLICY_COMPONENT_NAME_FIELD_DESC"
+            maxlength="30"
+            size="30"
+            default="FACILITY NAME" >
+        </field>
+    </fieldset>
+</config>
