@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="0.0.01" method="upgrade">
+    <name>com_training</name>
+    <author>Trent A. Riley</author>
+    <creationDate>February 2013</creationDate>
+    <copyright>Copyright (c) 2013, Vantage Point Software Solutions</copyright>
+    <license>Private</license>
+    <authorEmail>trentr@threerivershospital.com</authorEmail>
+    <version>0.0.01</version>
+    <description>Component to manage training and examinations</description>
+    
+    <files folder="site">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>training.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+    
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.training.sql</file>
+        </sql>
+    </install>
+    
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.training.sql</file>            
+        </sql>
+    </uninstall>
+    
+    <administration>
+        <menu link="option=com_training">COM_TRAINING_MENU</menu>
+        
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>training.php</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+        </files>
+    </administration>
+</extension>

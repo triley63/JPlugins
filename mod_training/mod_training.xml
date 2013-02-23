@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="install">
+	<name>Training And Exams</name>
+	<author>Trent A. Riley</author>
+	<creationDate>February 2013</creationDate>
+	<copyright>Copyright (c) 2013, Vantage Point Software Solutions, All Rights Reserved</copyright>
+	<license>Private</license>
+	<authorEmail>trentr@threerivershospital.com</authorEmail>
+	<version>1.0</version>
+	<description>A module listing all of the training topics for Three Rivers Hospital</description>
+	<files>
+		<filename module="mod_training">mod_training.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_training.xml</filename>
+	</files>
+</extension>
