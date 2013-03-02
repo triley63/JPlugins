@@ -1,11 +1,14 @@
 CREATE TABLE `#__Training_Training`
 (
     `trainingID` int(11) NOT NULL AUTO_INCREMENT
-    ,`description` varchar(100) NOT NULL
+    ,`name` varchar(100) NOT NULL
+    ,`description` text NULL
     ,`trainingTypeID` int(11) NOT NULL
     ,`categoryID` int(11) NOT NULL
     ,`trainingStyleID` int(11) NOT NULL
     ,`frequencyID` int(11) NOT NULL
+    ,`active` bit NOT NULL DEFAULT 1
+    ,`assignedOnly` bit NOT NULL DEFAULT 0
     ,PRIMARY KEY (`trainingID`)
     ,KEY `trainingTypeID` (`trainingTypeID`)
     ,KEY `categoryID` (`categoryID`)

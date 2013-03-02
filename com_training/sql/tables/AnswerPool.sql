@@ -1,6 +1,6 @@
 CREATE TABLE `#__Training_AnswerPool`
 (
-    `answerPoolID` int(11) NOT NULL 
+    `answerPoolID` int(11) NOT NULL AUTO_INCREMENT
     ,`answer` varchar(255) NOT NULL
     ,`questionPoolID` int(11) NOT NULL
     ,PRIMARY KEY (`answerPoolID`)
@@ -8,8 +8,8 @@ CREATE TABLE `#__Training_AnswerPool`
 );
 
 
-ALTER TABLE `#__Training_AnswerPool`
-    ADD CONSTRAINT `fk_AnswerPool_QuestionPool_QuestionPoolID` FOREIGN KEY (`questionID`) REFERENCES `#__Training_QuestionPool` (`questionPoolID`);
+-- ALTER TABLE `#__Training_AnswerPool`
+--     ADD CONSTRAINT `fk_AnswerPool_QuestionPool_QuestionPoolID` FOREIGN KEY (`questionID`) REFERENCES `#__Training_QuestionPool` (`questionPoolID`);
 
 
 /* DROP INFORMATION */
