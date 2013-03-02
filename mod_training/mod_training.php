@@ -32,8 +32,8 @@ $query = $db->getQuery(true);
 $query->select("t.trainingID, t.name, t.assignedOnly")
         ->from("#__Training_Training AS t")
         ->leftJoin("#__Training_UserTraining AS ut ON t.trainingID = ut.trainingID")
-        ->leftJoin("#__users AS u ON ut.userID = u.id")
-        ->where("ut.passed = 0 AND (t.active = 1 OR t.assignedOnly = 0)");
+        ->leftJoin("#__users AS u ON ut.userID = u.id AND u.userName = '" . $user . "'")
+        ->where("ut.passed = 0 OR (t.active = 1 AND t.assignedOnly = 0)");
         
 $db->setQuery($query);
 $rows = $db->loadObjectList();
